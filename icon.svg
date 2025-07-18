@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#2196F3" stroke="#1976D2" stroke-width="4"/>
+  
+  <!-- Keyboard representation -->
+  <rect x="24" y="45" width="80" height="38" rx="4" fill="#FFFFFF" stroke="#1976D2" stroke-width="2"/>
+  
+  <!-- Keys -->
+  <rect x="32" y="52" width="8" height="8" rx="1" fill="#1976D2"/>
+  <rect x="44" y="52" width="8" height="8" rx="1" fill="#1976D2"/>
+  <rect x="56" y="52" width="8" height="8" rx="1" fill="#1976D2"/>
+  <rect x="68" y="52" width="8" height="8" rx="1" fill="#1976D2"/>
+  <rect x="80" y="52" width="8" height="8" rx="1" fill="#1976D2"/>
+  <rect x="92" y="52" width="8" height="8" rx="1" fill="#1976D2"/>
+  
+  <rect x="32" y="64" width="8" height="8" rx="1" fill="#1976D2"/>
+  <rect x="44" y="64" width="8" height="8" rx="1" fill="#FF5722"/>
+  <rect x="56" y="64" width="8" height="8" rx="1" fill="#FF5722"/>
+  <rect x="68" y="64" width="20" height="8" rx="1" fill="#4CAF50"/>
+  <rect x="92" y="64" width="8" height="8" rx="1" fill="#1976D2"/>
+  
+  <!-- Labels -->
+  <text x="48" y="70" font-family="Arial, sans-serif" font-size="6" fill="#FFFFFF" text-anchor="middle">j</text>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="6" fill="#FFFFFF" text-anchor="middle">k</text>
+  <text x="78" y="70" font-family="Arial, sans-serif" font-size="5" fill="#FFFFFF" text-anchor="middle">Enter</text>
+</svg>
