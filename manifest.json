@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Navigate search results with vim-like keyboard shortcuts (j/k/Enter)",
   "icons": {
-    "48": "icon48.png"
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
   "content_scripts": [
     {
