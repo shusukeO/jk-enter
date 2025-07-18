@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Search Enter Open",
+  "name": "JK Enter",
   "version": "1.0.0",
   "description": "Navigate search results with vim-like keyboard shortcuts (j/k/Enter)",
   "icons": {
