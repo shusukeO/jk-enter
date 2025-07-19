@@ -1,8 +1,65 @@
 # JK Enter
 
+[🇺🇸 English](#english) | [🇯🇵 日本語](#japanese)
+
 <div align="center">
-  <img src="icon.svg" alt="JK Enter アイコン" width="128" height="128">
+  <img src="icon.svg" alt="JK Enter Icon" width="128" height="128">
 </div>
+
+A Chrome extension that provides Vim-like keyboard navigation for search result pages.
+
+## Distribution
+
+https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghhbb
+
+## Features
+
+- `j` key: Select next search result
+- `k` key: Select previous search result
+- `Enter` key: Open selected search result
+- Highlight selected search result
+- Auto-scroll functionality
+
+## Supported Search Engines
+
+- Google Search (google.com, google.co.jp)
+
+## Installation
+
+### Development Mode (Manual Installation)
+
+1. Open `chrome://extensions/` in Chrome
+2. Enable "Developer mode" in the top right
+3. Click "Load unpacked"
+4. Select this folder
+
+### Usage
+
+1. Search for something on a search engine
+2. Use the following keys on the search results page:
+   - `j`: Select result below
+   - `k`: Select result above
+   - `Enter`: Open selected result
+
+## File Structure
+
+- `manifest.json`: Extension configuration file
+- `content.js`: Main functionality script
+- `styles.css`: Highlight styles
+- `icon.svg`: Extension icon
+
+## Technical Specifications
+
+- Manifest V3 compliant
+- Implemented using content scripts
+
+## License
+
+This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Japanese
 
 検索結果画面で Vim ライクなキーボードナビゲーションを提供する Chrome 拡張機能です。
 
@@ -54,3 +111,4 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
 ## ライセンス
 
 このプロジェクトは MIT License の下で配布されています。詳細は [LICENSE](LICENSE) ファイルを参照してください。
+
