@@ -1,5 +1,9 @@
 # JK Enter
 
+<div align="center">
+  <img src="icon.svg" alt="JK Enter アイコン" width="128" height="128">
+</div>
+
 検索結果画面で Vim ライクなキーボードナビゲーションを提供する Chrome 拡張機能です。
 
 ## 配布
@@ -46,3 +50,7 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
 
 - Manifest V3 準拠
 - コンテンツスクリプトによる実装
+
+## ライセンス
+
+このプロジェクトは MIT License の下で配布されています。詳細は [LICENSE](LICENSE) ファイルを参照してください。
