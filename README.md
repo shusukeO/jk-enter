@@ -53,6 +53,10 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
 - Manifest V3 compliant
 - Implemented using content scripts
 
+## Contributing
+
+Found a bug or have an improvement idea? Feel free to open an issue or submit a pull request! No specific format required - just make it clear what you're trying to fix or improve.
+
 ## License
 
 This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -107,6 +111,10 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
 
 - Manifest V3 準拠
 - コンテンツスクリプトによる実装
+
+## コントリビューション
+
+バグを見つけたり改善案がありましたら、お気軽にIssueを立てるかPull Requestを送ってください！特定の形式は気にしません。何を修正・改善しようとしているかわかるようにお願いします。
 
 ## ライセンス
 
