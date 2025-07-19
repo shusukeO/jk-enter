@@ -35,11 +35,6 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
    - `k`: 上の結果を選択
    - `Enter`: 選択中の結果を開く
 
-## 注意事項
-
-- 検索ボックスや他の入力フィールドにフォーカスがある時は動作しません
-- `Ctrl+Enter` または `Cmd+Enter` で新しいタブで開くことができます
-
 ## ファイル構成
 
 - `manifest.json`: 拡張機能の設定ファイル
@@ -51,4 +46,3 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
 
 - Manifest V3 準拠
 - コンテンツスクリプトによる実装
-- セキュアな isolated world 環境で動作
