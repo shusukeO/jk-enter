@@ -6,6 +6,7 @@
   <img src="icon.svg" alt="JK Enter Icon" width="128" height="128">
 </div>
 
+
 A Chrome extension that provides Vim-like keyboard navigation for search result pages.
 
 
