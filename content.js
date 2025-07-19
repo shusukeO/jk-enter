@@ -1,8 +1,6 @@
 (function () {
   "use strict";
 
-  console.log("Search Enter Open extension loaded");
-
   let currentSelectedIndex = 0;
   let searchResults = [];
 
@@ -17,13 +15,9 @@
       '#center_col a[href*="://"]:has(h3)', // センターカラム内のh3付きリンク
     ];
 
-    selectors.forEach((selector, index) => {
-      console.log(`Trying selector ${index + 1}: ${selector}`);
+    selectors.forEach((selector) => {
       try {
         const elements = document.querySelectorAll(selector);
-        console.log(
-          `Found ${elements.length} elements with selector: ${selector}`
-        );
 
         elements.forEach((link) => {
           // URL正規化（フラグメント除去）
@@ -32,15 +26,13 @@
           if (!seen.has(normalizedUrl) && isValidSearchResult(link)) {
             seen.add(normalizedUrl);
             results.push(link);
-            console.log(`Added result: ${normalizedUrl}`);
           }
         });
       } catch (e) {
-        console.log(`Selector failed: ${selector}`, e);
+        // Selector failed silently
       }
     });
 
-    console.log("Found", results.length, "search results");
     return results;
   }
 
@@ -58,46 +50,33 @@
 
   // 有効な検索結果かを判定する関数
   function isValidSearchResult(link) {
-    console.log(
-      `Checking link: ${link.href}, text: "${link.textContent.trim()}"`
-    );
-
     // Google内部リンクを除外（ただし検索やURL以外は許可）
     if (
       link.href.includes("google.com/search") ||
       link.href.includes("google.com/url") ||
       link.href.includes("accounts.google.com")
     ) {
-      console.log(`Excluded Google internal: ${link.href}`);
       return false;
     }
 
-    // 関連質問セクションや特殊セクションを除外
-    if (
-      link.closest(
-        "[jsname], [data-async-context], .related-question-pair, .xpdopen, [data-attrid]"
-      )
-    ) {
-      console.log(`Excluded related questions/special section: ${link.href}`);
+    // 関連質問セクションを除外
+    if (link.closest(".related-question-pair, .xpdopen")) {
       return false;
     }
 
     // 表示状態チェック（非表示要素を除外）
     if (!isElementVisible(link)) {
-      console.log(`Excluded hidden element: ${link.href}`);
       return false;
     }
 
     // 明らかな広告を除外
     if (link.closest("#tads, .ads-ad")) {
-      console.log(`Excluded ad: ${link.href}`);
       return false;
     }
 
     // テキストの基本品質チェック
     const linkText = link.textContent.trim();
     if (linkText.length < 1) {
-      console.log(`Excluded empty text: ${link.href}`);
       return false;
     }
 
@@ -105,12 +84,8 @@
     try {
       const url = new URL(link.href);
       const isValid = url.protocol === "http:" || url.protocol === "https:";
-      if (!isValid) {
-        console.log(`Excluded invalid protocol: ${link.href}`);
-      }
       return isValid;
     } catch {
-      console.log(`Excluded invalid URL: ${link.href}`);
       return false;
     }
   }
@@ -194,7 +169,6 @@
     if (searchResults.length > 0) {
       currentSelectedIndex = 0;
       updateHighlight();
-      console.log("Extension initialized");
     }
 
     document.addEventListener("keydown", handleKeydown);
