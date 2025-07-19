@@ -11,10 +11,7 @@
     {
       "matches": [
         "*://www.google.com/search*",
-        "*://www.google.co.jp/search*",
-        "*://search.yahoo.com/*",
-        "*://search.yahoo.co.jp/*",
-        "*://www.bing.com/search*"
+        "*://www.google.co.jp/search*"
       ],
       "js": ["content.js"],
       "css": ["styles.css"],
