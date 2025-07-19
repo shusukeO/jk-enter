@@ -14,6 +14,11 @@ https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghh
 
 ## Features
 
+<div align="center">
+  <img src="screenshot.png" alt="JK Enter in action" width="600">
+  <p><em>JK Enter highlighting search results with keyboard navigation</em></p>
+</div>
+
 - `j` key: Select next search result
 - `k` key: Select previous search result
 - `Enter` key: Open selected search result
@@ -72,6 +77,11 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
 https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghhbb
 
 ## 機能
+
+<div align="center">
+  <img src="screenshot.png" alt="JK Enter の動作例" width="600">
+  <p><em>キーボードナビゲーションで検索結果をハイライト表示</em></p>
+</div>
 
 - `j` キー: 次の検索結果を選択
 - `k` キー: 前の検索結果を選択
