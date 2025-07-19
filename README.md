@@ -2,6 +2,10 @@
 
 検索結果画面でVimライクなキーボードナビゲーションを提供するChrome拡張機能です。
 
+## 配布
+
+https://chromewebstore.google.com/detail/jk-enter/ojkdcnmekahoajljhmilnbmnngfghhbb
+
 ## 機能
 
 - `j` キー: 次の検索結果を選択
