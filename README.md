@@ -7,6 +7,8 @@
 </div>
 
 A Chrome extension that provides Vim-like keyboard navigation for search result pages.
+Pressing Enter immediately after searching opens the first search result instantly.
+
 
 ## Distribution
 
